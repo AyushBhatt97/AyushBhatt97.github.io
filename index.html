@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayush Bhatt — Finance Professional | Melbourne</title>
-<meta name="description" content="Finance professional with 5+ years in controllership, FP&A, and analytics. Fortune 500 (Aon). CPA Australia ASA. Based in Melbourne.">
+<meta name="description" content="Finance professional with 4+ years in controllership, FP&A, and analytics. Fortune 500 (Aon). CPA Australia ASA. Based in Melbourne.">
 <!-- Open Graph for LinkedIn / WhatsApp sharing -->
 <meta property="og:title" content="Ayush Bhatt — Finance Professional | Melbourne">
-<meta property="og:description" content="5+ years across controllership, FP&A, and analytics — including 4 years at Aon (Fortune 500). CPA Australia ASA. Open to work in Melbourne.">
+<meta property="og:description" content="4+ years across controllership, FP&A, and analytics — including 4 years at Aon (Fortune 500). CPA Australia ASA. Open to work in Melbourne.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ayushbhatt97.github.io">
 <meta property="og:image" content="https://ayushbhatt97.github.io/Ayush.jpg">
@@ -349,29 +349,42 @@ section { padding: 6rem 2rem; }
 .award-item h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.15rem; }
 .award-item p { font-size: 0.8rem; color: var(--text-muted); }
 
-/* ── SKILLS ── */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.skill-card {
+/* ── SKILLS (proof-based) ── */
+.skills-intro {
+  color: var(--text-secondary); font-size: 1rem; line-height: 1.75;
+  margin-bottom: 2.5rem; max-width: 700px;
+}
+.skills-intro strong { color: var(--text-primary); }
+.skills-category { margin-bottom: 2rem; }
+.skills-category:last-child { margin-bottom: 0; }
+.skills-category-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent);
+  margin-bottom: 0.9rem; display: block;
+}
+.skill-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.skill-chip {
+  display: inline-flex; align-items: center; gap: 0.6rem;
   background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: 12px; padding: 1.75rem; transition: border-color 0.25s, transform 0.25s;
+  border-radius: 100px; padding: 0.55rem 1.1rem;
+  transition: border-color 0.25s, transform 0.25s;
 }
-.skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.skill-name { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
-.skill-name span { font-weight: 600; font-size: 0.95rem; }
-.skill-name .pct { color: var(--accent); font-size: 0.85rem; }
-.skill-bar { height: 6px; background: var(--bg-primary); border-radius: 3px; overflow: hidden; }
-.skill-bar-fill {
-  height: 100%; border-radius: 3px;
-  background: linear-gradient(90deg, var(--accent), #7eb3ff);
-  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1); width: 0;
+.skill-chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+.skill-chip-name { color: var(--text-primary); font-weight: 600; font-size: 0.88rem; }
+.skill-chip-context {
+  color: var(--text-muted); font-size: 0.76rem;
+  border-left: 1px solid var(--border); padding-left: 0.7rem;
 }
-.skill-card.learning { border-style: dashed; }
-.learning-badge {
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  font-size: 0.75rem; font-weight: 600; color: var(--accent-orange);
-  background: rgba(245,158,11,0.1); padding: 0.25rem 0.75rem;
-  border-radius: 100px; margin-top: 0.5rem;
+.skill-chip.primary {
+  background: rgba(79,140,255,0.08); border-color: rgba(79,140,255,0.35);
 }
+.skill-chip.primary .skill-chip-name { color: var(--accent); }
+.skill-chip.primary .skill-chip-context { border-left-color: rgba(79,140,255,0.3); color: rgba(79,140,255,0.85); }
+.skill-chip.learning {
+  border-style: dashed; background: rgba(245,158,11,0.05);
+}
+.skill-chip.learning .skill-chip-name { color: var(--accent-orange); }
+.skill-chip.learning .skill-chip-context { color: var(--accent-orange); opacity: 0.8; border-left-color: rgba(245,158,11,0.3); }
 
 /* ── CRICKET / FUN ── */
 .fun-section {
@@ -464,6 +477,7 @@ footer {
   .wow-highlights { grid-template-columns: 1fr 1fr; }
   .wow-pages-grid { grid-template-columns: 1fr; }
   .cert-banner { flex-direction: column; text-align: left; gap: 1.25rem; }
+  .wow-intro { flex-direction: column !important; gap: 1.25rem !important; align-items: flex-start !important; }
   .logo-img-lg { width: 56px; height: 56px; }
   .credentials-inner { gap: 1.5rem; justify-content: flex-start; }
   .fun-grid { grid-template-columns: 1fr; }
@@ -511,7 +525,7 @@ footer {
       <h1>Ayush Bhatt</h1>
       <p class="hero-tagline">
         I turn messy financials into stories that make CFOs nod.<br>
-        <strong>5+ years</strong> across controllership, FP&A, and analytics — including <strong>4 years at Aon</strong> (Fortune 500). Now in Melbourne with <strong>unrestricted work rights</strong>, a <strong>CPA Australia (ASA)</strong> in progress, and a habit of building things that actually get used.
+        <strong>4+ years</strong> across controllership, FP&A, and analytics — including <strong>4 years at Aon</strong> (Fortune 500). Now in Melbourne with <strong>unrestricted work rights</strong>, a <strong>CPA Australia (ASA)</strong> in progress, and a habit of building things that actually get used.
       </p>
       <div class="hero-buttons">
         <a href="https://ayushbhatt97.github.io/Ayush%20Bhatt%20Resume.pdf" class="btn btn-primary" target="_blank">
@@ -564,14 +578,14 @@ footer {
 <section id="wow">
   <div class="section-inner fade-in">
     <span class="section-label">Live Demo</span>
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
-      <h2 class="section-title" style="margin-bottom: 0;">Here's What I Actually Do</h2>
-      <div style="width: 56px; height: 56px; border-radius: 10px; overflow: hidden; background: #000; flex-shrink: 0; display: flex; align-items: center; justify-content: center;"><img src="woolworths%20logo.png" alt="Woolworths" style="width: 100%; height: 100%; object-fit: contain; padding: 4px;"></div>
-    </div>
+    <h2 class="section-title">Here's What I Actually Do</h2>
     <p class="section-desc">Anyone can list "Power BI" and "Financial Modelling" on a resume. I'd rather just show you. Here's a complete financial analysis of <strong>Woolworths Group (ASX: WOW)</strong> — built with real data, real insights, and the kind of thinking I bring to every role.</p>
-    <div class="wow-intro">
+    <div class="wow-intro" style="display: flex; gap: 2rem; align-items: center;">
+      <div style="width: 90px; height: 90px; border-radius: 14px; overflow: hidden; background: #000; flex-shrink: 0; display: flex; align-items: center; justify-content: center;"><img src="woolworths%20logo.png" alt="Woolworths" style="width: 100%; height: 100%; object-fit: contain; padding: 8px;"></div>
+      <div>
       <p>I picked <strong>Woolworths</strong> deliberately — not a textbook case study, but a <em>real ASX-listed company</em> with messy FY2024 numbers (53-week year, $1.7B in non-cash impairments). The kind of data that breaks if you just plug it into a template. That's the point.</p>
       <p>The analysis covers <strong>FY2022–FY2025 actuals</strong> with <strong>FY2026E projections</strong> across three scenarios — because any analyst can report what happened, but the useful ones tell you what might happen next.</p>
+      </div>
     </div>
     <div class="wow-highlights">
       <div class="wow-stat"><div class="stat-value">6</div><div class="stat-label">Report Pages</div></div>
@@ -725,15 +739,39 @@ footer {
   <div class="section-inner fade-in">
     <span class="section-label">Technical Skills</span>
     <h2 class="section-title">Tools of the Trade</h2>
-    <p class="section-desc">The stuff I actually use — not just list on LinkedIn.</p>
-    <div class="skills-grid">
-      <div class="skill-card"><div class="skill-name"><span>Excel & Power Query</span><span class="pct">95%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div></div>
-      <div class="skill-card"><div class="skill-name"><span>Power BI & DAX</span><span class="pct">90%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div></div>
-      <div class="skill-card"><div class="skill-name"><span>Financial Modelling</span><span class="pct">90%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div></div>
-      <div class="skill-card"><div class="skill-name"><span>ERP Systems (Workday, PeopleSoft, Coupa)</span><span class="pct">85%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div></div>
-      <div class="skill-card"><div class="skill-name"><span>SQL</span><span class="pct">80%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div></div>
-      <div class="skill-card"><div class="skill-name"><span>Python (Pandas, Matplotlib)</span><span class="pct">80%</span></div><div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div></div>
-      <div class="skill-card learning"><div class="skill-name"><span>Xero & MYOB</span></div><span class="learning-badge">⏳ Currently Learning</span></div>
+    <p class="skills-intro">No arbitrary percentages — if you want proof, the <a href="#wow" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">WOW analysis above</a> was built entirely with these tools. Primary tools highlighted in blue.</p>
+
+    <div class="skills-category">
+      <span class="skills-category-label">💻 Tools I Build With</span>
+      <div class="skill-chips">
+        <span class="skill-chip primary"><span class="skill-chip-name">Excel</span><span class="skill-chip-context">Daily — advanced (Power Query, VBA, complex modelling)</span></span>
+        <span class="skill-chip primary"><span class="skill-chip-name">Power BI</span><span class="skill-chip-context">DAX measures, ribbon charts, waterfalls</span></span>
+        <span class="skill-chip primary"><span class="skill-chip-name">Financial Modelling</span><span class="skill-chip-context">3-statement, scenarios, variance bridges</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">SQL</span><span class="skill-chip-context">Joins, CTEs, window functions</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">Python</span><span class="skill-chip-context">Pandas, Matplotlib — MSc-level</span></span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <span class="skills-category-label">📊 Finance Expertise</span>
+      <div class="skill-chips">
+        <span class="skill-chip"><span class="skill-chip-name">Variance Analysis</span><span class="skill-chip-context">4 years at Aon</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">Month-End Close</span><span class="skill-chip-context">Multiple BUs, IFRS-compliant</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">Budgeting & Forecasting</span><span class="skill-chip-context">FP&A at AnujJindal.in</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">P2P & R2R</span><span class="skill-chip-context">Aon — audit, reconciliations</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">Stakeholder Reporting</span><span class="skill-chip-context">CFO-level decks & commentary</span></span>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <span class="skills-category-label">⚙️ Systems I've Worked With</span>
+      <div class="skill-chips">
+        <span class="skill-chip"><span class="skill-chip-name">Workday</span><span class="skill-chip-context">Led migration from PeopleSoft</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">PeopleSoft</span><span class="skill-chip-context">3+ years at Aon</span></span>
+        <span class="skill-chip"><span class="skill-chip-name">Coupa</span><span class="skill-chip-context">Vendor payments, P2P cycle</span></span>
+        <span class="skill-chip learning"><span class="skill-chip-name">Xero</span><span class="skill-chip-context">⏳ Currently learning</span></span>
+        <span class="skill-chip learning"><span class="skill-chip-name">MYOB</span><span class="skill-chip-context">⏳ Currently learning</span></span>
+      </div>
     </div>
 
     <!-- Cricket Section -->
